@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>TEST</title>
+
+        <link rel="stylesheet" href="css/style.css">
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+
+        <script src="https://code.highcharts.com/highcharts.js"></script>
+        <script src="https://code.highcharts.com/modules/exporting.js"></script>
+       <script src="https://code.highcharts.com/modules/export-data.js"></script>
+
+    </head>
+
+    <body>
+      <header>
+       <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+         <a class="navbar-brand" href="#"><img src="images/logo.jpg.png" class="logo"></a>
+          <div class="header-container">
+           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+           </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Projects <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                   <a class="nav-link" href="#">Learn</a>
+                </li>
+                <li class="nav-item">
+                   <a class="nav-link" href="#">Rates</a>
+                </li>
+              </ul>
+                 <a class="nav-link  UserName" href="#">
+                  <div class="dropdown user">
+                   <a class="btn1 btn-default  dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">User Name</a>
+                     <div class="dropdown-menu user" aria-labelledby="dropdownMenuLink">
+                      <a class="dropdown-item" href="#"> User Name 1</a>
+                      <a class="dropdown-item" href="#"> User Name 2</a>
+                      <a class="dropdown-item" href="#"> User Name 3</a>
+                      </a>
+            </div>
+          </div><!--header-container-->
+        </div><!--container-fluid-->
+
+         <div class="eagle">
+          <h5>Eagle Counstructions<i class="fas fa-angle-down"></i></h5>
+         </div><!--eagle-->
+
+       </nav>
+      </header>
+
+     <div class="tabs-3">
+      <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <li class="nav-item">
+          <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Cost Summary</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Material Takeoff</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Project Master</a>
+        </li>
+      </ul>
+
+     <div class="tab-content" id="myTabContent">
+      <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+       <div class="container">
+         <div class="row">
+          <div class="col-lg-9 col-sm-9">
+           <div class="row">
+             <div class="col-6 material" >
+              Construction Cost (Material + Labour)
+            </div><!--col-->
+             <div class="col-6 labour">
+              <div class="cost">
+                Costing in    
+                <div class="dropdown">
+                 <button class="btn2 btn-default btn-sm dropdown-toggle" type="button" data-toggle="dropdown">Rs/sqft
+                  <span class="caret"></span></button>
+                  <ul class="dropdown-menu cost">
+                    <li>Rs/sqft 1</li>
+                    <li>Rs/sqft 2</li>
+                    <li>Rs/sqft 3</li>
+                  </ul>
+                </div><!--dropdown-->
+                   Costing per   
+                    <div class="dropdown">
+                     <button class="btn2 btn-default btn-sm dropdown-toggle" type="button" data-toggle="dropdown">Slab Area
+                      <span class="caret"></span></button>
+                        <ul class="dropdown-menu cost">
+                         <li>Slab Area 1</li>
+                         <li>Slab Area 2</li>
+                         <li>Slab Area 3</li>
+                        </ul>
+                    </div><!--dropdown-->
+              </div><!--cost-->
+            </div><!--col-->
+          </div><!--row-->
+
+       <div class="container">
+        <ul class="responsive-table">
+          <li class="table-header">
+           <div class="row">
+            <div class="col-1">
+             <i class="material-icons">
+              arrow_drop_up
+             </i>
+            </div>
+            <div class="col-2"><h4>Eagle</h4></div>
+            <div class="col-8">Total Slab Area: 50,600 sqft</div>
+            <div class="col-1">
+              <i class="material-icons menu">
+                more_vert
+              </i></div>
+         </div><!--row-->
+        </li>
+
+        <li class="table-row">
+         <div class="row">
+          <div class="col-3 col1"><span class="strong cost2">Cost Head</span></div>
+          <div class="col-4"><span class="strong">By Thumbrule</span>
+            <div class="row">
+              <div class="col-6 top">
+                Budgeted Cost
+              </div>
+              <div class="col-6">
+                Rate/Sqft<br>
+                (Slab Area)
+              </div>
+            </div><!--row-->
+          </div>
+          <div class="col-5">
+            <div class="col-12">
+              <span class="strong">Estimated</span><span class="small">(as per project quantities & rates)</span>
+            </div>
+            <div class="row">
+             <div class="col-6 top">
+              Estimated Cost
+             </div>
+             <div class="col-6">
+              Rate/Sqft<br>
+              (Slab Area)
+             </div>
+            </div><!--row-->
+          </div><!--col-->
+        </div><!--row-->
+      </li>
+      
+      <li class="table-row">
+       <div class="row">
+        <div class="col-3">Excavation</div>
+        <div class="col-4">
+          <div class="row">
+            <div class="col-6">15,00,000<span><a href="#"><img src="images/Data-Edit-24.png" class="pencile"></a></span>
+            </div>
+            <div class="col-6"><span class="number">30</span>
+            </div>
+          </div><!--row-->
+        </div><!--col-->
+        <div class="col-4">
+          <div class="row">
+            <div class="col-6"><span class="red">16,55,000</span><span><a href="#"><img src="images/Data-Edit-24.png" class="pencile"></a></span>
+            </div>
+            <div class="col-6"><span class="number">18</span></div>
+          </div><!--row-->
+        </div>
+        <div class="col-1"><i class="fas fa-trash-alt"></i></div>
+        </div><!--row-->
+      </li>
+
+      <li class="table-row">
+       <div class="row">
+        <div class="col-3">RCC Work</div>
+        <div class="col-4">
+          <div class="row">
+            <div class="col-6">4,95,00,000<span><a href="#"><img src="images/Data-Edit-24.png" class="pencile"></a></span>
+            </div>
+            <div class="col-6"><span class="number">990</span></div>
+          </div><!--row-->
+        </div>
+        <div class="col-4">
+          <div class="row">
+            <div class="col-6"><span class="blue">4,50,00,000</span><span><a href="#"><img src="images/Data-Edit-24.png" class="pencile"></a></span>
+            </div>
+            <div class="col-6"><span class="number">442</span></div>
+          </div><!--row-->
+        </div>
+        <div class="col-1"><i class="fas fa-trash-alt"></i></div>
+        </div><!--row-->
+      </li>
+
+      <li class="table-row">
+        <div class="row">
+        <div class="col-3">Masonry</div>
+        <div class="col-4">
+          <div class="row">
+            <div class="col-6">1,75,00,000<span><a href="#"><img src="images/Data-Edit-24.png" class="pencile"></a></span></div>
+            <div class="col-6"><span class="number">350</span></div>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="row">
+            <div class="col-6"><button type="button" class="btn btn-outline-info">Get Amount</button></div>
+            <div class="col-6"><span class="number">_</span></div>
+          </div><!--row-->
+        </div><!--col-->
+        <div class="col-1"><i class="fas fa-trash-alt"></i></div>
+        </div><!--row-->
+      </li>
+      
+      <li class="table-row">
+       <div class="row">
+        <div class="col-3">Plaster</div>
+         <div class="col-4">
+          <div class="row">
+           <div class="col-6">60,00,000<span><a href="#"><img src="images/Data-Edit-24.png" class="pencile"></a></span></div>
+           <div class="col-6"><span class="number">120</span></div>
+          </div><!--row-->
+        </div><!--col-->
+        <div class="col-4">
+         <div class="row">
+          <div class="col-6"><button type="button" class="btn btn-outline-info">Get Amount</button></div>
+          <div class="col-6"><span class="number">_</span></div>
+         </div><!--row-->
+        </div>
+      <div class="col-1"><i class="fas fa-trash-alt"></i></div>
+      </div><!--row-->
+     </li>
+
+      <li class="table-row">
+       <div class="row">
+        <div class="col-3">Flooring, Skirting, Dado<br>
+          & cladding, Counters Work</div>
+        <div class="col-4">
+          <div class="row">
+            <div class="col-6">5,800,694<span><a href="#"><img src="images/Data-Edit-24.png" class="pencile"></a></span></div>
+            <div class="col-6"><span class="number">42</span></div>
+          </div><!--row-->
+        </div><!--col-->
+        <div class="col-4">
+          <div class="row">
+            <div class="col-6"><button type="button" class="btn btn-outline-info">Get Amount</button></div>
+            <div class="col-6"><span class="number">_</span></div>
+          </div>
+        </div>
+        <div class="col-1"><i class="fas fa-trash-alt"></i></div>
+        </div><!--row-->
+      </li>
+
+      <li class="table-row">
+       <div class="row">
+        <div class="col-3">Wooden Works- Doors</div>
+        <div class="col-4">
+          <div class="row">
+            <div class="col-6">1,147,520<span><a href="#"><img src="images/Data-Edit-24.png" class="pencile"></a></span></div>
+            <div class="col-6"><span class="number">151</span></div>
+          </div><!--row-->
+        </div>
+        <div class="col-4">
+          <div class="row">
+            <div class="col-6"><button type="button" class="btn btn-outline-info">Get Amount</button></div>
+            <div class="col-6"><span class="number">_</span></div>
+          </div><!--row-->
+        </div>
+        <div class="col-1"><i class="fas fa-trash-alt"></i></div>
+        </div><!--row-->
+      </li>
+
+      <li class="table-row">
+        <div class="row">
+        <div class="col-3">Aluminum Works- Sliding
+          Doors & Windows</div>
+        <div class="col-4">
+          <div class="row">
+            <div class="col-6">1,042,451<span><a href="#"><img src="images/Data-Edit-24.png" class="pencile"></a></span></div>
+            <div class="col-6"><span class="number">30</span></div>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="row">
+            <div class="col-6"><button type="button" class="btn btn-outline-info">Get Amount</button></div>
+            <div class="col-6"><span class="number">_</span></div>
+          </div><!--row-->
+        </div><!--col-->
+        <div class="col-1"><i class="fas fa-trash-alt"></i></div>
+        </div><!--row-->
+      </li>
+
+      <li class="table-row">
+       <div class="row">
+        <div class="col-3">Structural Works- Grills &
+          Railings</div>
+        <div class="col-4">
+          <div class="row">
+            <div class="col-6">1,147,928<span><a href="#"><img src="images/Data-Edit-24.png" class="pencile"></a></span></div>
+            <div class="col-6"><span class="number">27</span></div>
+          </div><!--row-->
+        </div>
+        <div class="col-4">
+          <div class="row">
+            <div class="col-6"><button type="button" class="btn btn-outline-info">Get Amount</button></div>
+            <div class="col-6"><span class="number">_</span></div>
+          </div><!--row-->
+        </div>
+        <div class="col-1"><i class="fas fa-trash-alt"></i></div>
+        </div><!--row-->
+      </li>
+
+      <li class="table-row">
+       <div class="row">
+        <div class="col-3">Painting & Polishing Works</div>
+        <div class="col-4">
+          <div class="row">
+            <div class="col-6">1,75,00,000<span><a href="#"><img src="images/Data-Edit-24.png" class="pencile"></a></span></div>
+            <div class="col-6"><span class="number">30</span></div>
+          </div><!--row-->
+        </div>
+        <div class="col-4">
+          <div class="row">
+            <div class="col-6"><button type="button" class="btn btn-outline-info">Get Amount</button></div>
+            <div class="col-6"><span class="number">_</span></div>
+          </div><!--row-->
+        </div>
+        <div class="col-1"><i class="fas fa-trash-alt"></i></div>
+        </div><!--row-->
+      </li>
+
+      <li class="table-row">
+        <div class="row">
+        <div class="col-3">Plumbing & Drainage Work</div>
+        <div class="col-4">
+          <div class="row">
+            <div class="col-6">3,279,570<span><a href="#"><img src="images/Data-Edit-24.png" class="pencile"></a></span></div>
+            <div class="col-6"><span class="number">48</span></div>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="row">
+            <div class="col-6"><button type="button" class="btn btn-outline-info">Get Amount</button></div>
+            <div class="col-6"><span class="number">_</span></div>
+          </div>
+        </div>
+        <div class="col-1"><i class="fas fa-trash-alt"></i></div>
+        </div>
+      </li>
+
+      <li class="table-row">
+        <div class="col-12">
+          <h2>+ Add Item</h2>
+       </div><!--col-->
+      </li>
+
+      <li class="table-header">
+       <div class="row">
+        <div class="col-2">
+            Total
+        </div>
+        <div class="col-1"></div>
+        <div class="col-7">
+         <div class="row">
+           <div class="col-5">54,135,476</div>
+           <div class="col-6">1610</div>
+           <div class="col-1"></div>
+         </div><!--row-->
+        </div><!--col-->
+        <div class="col-2">460</div>
+       </div><!--row-->
+     </li>
+   </ul>
+  </div><!--container-->
+</div><!--col-->
+
+
+      <div class="col-lg-3 highchart">
+          <div id="container">
+           </div><!--container-->
+            <div class="highchart-background">
+                <p>Eagle,<br>
+                    Construction Cst:<br>
+                    (Material + Labour)</p>
+            </div>
+
+              <div class="banner">
+                <img src="images/advertise.jpg" class="imgbanner">
+              </div><!--banner-->
+         
+      </div><!--col-->
+    </div><!--row-->
+   </div><!--container-->
+
+            </div>
+            <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">...</div>
+            <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">...</div>
+          </div>
+      </div><!--tabs-->
+    
+      <script src="js/highchart.js"></script>
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    </body>
+    
+</html>
